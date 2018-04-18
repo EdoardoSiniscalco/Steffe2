@@ -49,10 +49,4 @@ while t > 1e-8
 end
 
 r = 4*s1 - 2*s2 - s3 - s4;
-if r > 0
-    rs = rem(r,1);
-else
-    rs = 1+rem(r,1);
-end
-floor(rs*16)
-    
+floor(mod(r,1)*16)
